@@ -90,12 +90,13 @@ h1 {
 .nav_menu_item .nav_menu_link {
   font-size: 16.5px;
   line-height: 27px;
-  color: var(--link-color);
+  color: var(--primary-color);
+
   text-transform: capitalize;
   letter-spacing: 0.5px;
 }
 .nav_menu_link:hover {
-  color: var(--primary-color);
+  color: var(--link-color);
 }
 .toggle_btn {
   font-size: 20px;
@@ -292,10 +293,7 @@ footer {
 #contact {
   width: 100%;
 }
-#contact ul li a {
-  margin: 0;
-  padding: 0;
-}
+
 .section-header {
   text-align: center;
   margin: 0 auto;
@@ -338,7 +336,8 @@ textarea {
 .send-button {
   margin-top: 15px;
   height: 34px;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
 }
