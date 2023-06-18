@@ -123,6 +123,7 @@ h1 {
   padding: 1rem;
   margin: 2rem auto 2rem auto;
   background-color: var(--primary-color);
+  box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
 }
 .grid-cols-2 {
   width: 100%;
@@ -164,10 +165,13 @@ h1 {
   text-transform: capitalize;
   border-radius: 7px;
   letter-spacing: 1px;
-  transition: 0.4s;
+
+  transition: 0.4s ease-in-out;
 }
 .btn:hover {
   transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   background-color: var(--btn-hover-color);
 }
 .view_more_btn {
@@ -207,6 +211,12 @@ h1 {
 .grid-item-2 {
   width: 100%;
   height: 100%;
+  border-radius: 1em;
+  transition: all 0.5s ease-in-out;
+}
+.grid-item-2:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 16px;
 }
 .team_img_wrapper {
   width: 500px;
